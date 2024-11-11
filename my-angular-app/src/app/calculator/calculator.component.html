@@ -1,0 +1,9 @@
+<section class="calculator">
+    <app-display [displayValue]="displayValue"></app-display>
+    <div class="button-grid">
+      <button *ngFor="let button of buttons" (click)="onButtonClick(button)">
+        {{ button }}
+      </button>
+    </div>
+  </section>
+  
